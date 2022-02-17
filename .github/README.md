@@ -8,6 +8,7 @@
     - [via `npm`](#via-npm)
     - [via JavaScript](#via-javascript)
   - [Usage](#usage)
+  - [Update Schedule](#update-schedule)
   - [License](#license)
 
 ## Technologies Used
@@ -50,6 +51,9 @@ Create a JavaScript file, and add the code from the [`index.js`](https://raw.git
 In your HTML, add a `<p>` element with the id `insult`. This will be the element that will be updated with the insult.
 
 Add any element, and pass the `onclick="GenerateInsult()"` attribute to it. This will be the element that will trigger the insult.
+
+## Update Schedule
+DMV.js will follow the same update schedule as [(de)Motivator](https://porkyproductions.github.io/deMotivator), with a release every 2-3 weeks.
 
 ## License
 
