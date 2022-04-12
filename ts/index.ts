@@ -1,3 +1,18 @@
+// TypeScript Source Code
+// Language: typescript
+// Path: ts\script.ts
+// Author: PorkyProductions
+// License: Apache 2.0
+// Compile Location: js\script.js
+
+let button = document.getElementById('counter')
+
+const rickRollButton = () => {
+  const rickRollButton = document.createElement('rickRollButton');
+  rickRollButton.innerHTML =  '<button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>Click Me</button>';
+  document.body.appendChild(rickRollButton);
+}
+
 const insults = 
 [
     "you are dog water",
@@ -171,7 +186,7 @@ const insults =
     "Youre so dense, light must bend around you.",
     "Try to use this vacuum, it may help you remove the cobwebs in your mind.",
     "You're so old that your first car was a covered wagon.",
-    Geolocation,
+    geolocation,
     "You're about as useful as a bucket without a bottom.",
     "Does your train of thought have a caboose?",
     "I'm not insulting you. I'm describing you.",
@@ -219,6 +234,7 @@ const insults =
     "Your teeth remind me of starts - yellow and far apart.",
     "I will boil your teeth",
     "You look like somebody stepped on a goldfish.",
+    "I will invert your ribcage",
     "I'd like to help you out. Which way did you come in?",
     "I love to shop, but i'm not buying anything you say",
     "Someday you'll go far. And I really hope you stay there.",
@@ -256,25 +272,32 @@ const insults =
     "Don't worry about me. Worry about your eyebrows.",
     "Grab a straw, because you suck.",
     "You're the reason the gene pool needs a lifeguard.",
-    " ",
+    "You are not even beneath my contempt.",
+    "Your forehead is so big you donated it to charity for shelter!",
+    "You're as sharp as a bowling ball.",
+    "You always find yourself lost in thought; it's unfamiliar territory.",
+    "You're so ugly, you scared the crap out of the toilet.",
+    "If I had a dollar for every time you said something smart, I'd be broke.",
+    "Look to your left --------------> I said left you idiot!",
+    rickRollButton,
 
+    
     
 
     
 ];
 
-function GenerateInsult(){
+function GenerateInsult(insult): void {
     insult = insults[Math.floor(Math.random() * (insults.length-0.01))];
-      console.log(insults);
-      document.getElementById("insult").innerHTML = insult;
-    }
-  
-  
-  function geolocation(): void {
-    new Geolocation().then(pos => {
-      console.log(pos);}
-    )
-    .catch((err: any) => {
-      console.log(err);
-    });
-  }
+    console.log(insult);
+    document.getElementById("insult").innerHTML = insult;
+}
+
+function geolocation(): void {
+  new Geolocation().then(pos => {
+    console.log(pos);}
+  )
+  .catch((err: any) => {
+    console.log(err);
+  });
+}

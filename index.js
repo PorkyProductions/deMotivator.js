@@ -1,3 +1,15 @@
+// TypeScript Source Code
+// Language: typescript
+// Path: ts\script.ts
+// Author: PorkyProductions
+// License: Apache 2.0
+// Compile Location: js\script.js
+var button = document.getElementById('counter');
+var rickRollButton = function () {
+    var rickRollButton = document.createElement('rickRollButton');
+    rickRollButton.innerHTML = '<button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>Click Me</button>';
+    document.body.appendChild(rickRollButton);
+};
 var insults = [
     "you are dog water",
     "you bad",
@@ -134,7 +146,7 @@ var insults = [
     "The human brain is one of the most complex objects in the universe. Is it any wonder that so many people never learn to use it.",
     "You're so ugly, when you popped out the doctor said 'Aww what a treasure' and your mom said 'Yeah, lets bury it.'",
     "You're so fat, you could sell shade.",
-    "You're so ugly, when you got robbed, the robbers made you wear their masks so they don't have to look at you.",
+    "You're so ugly, when you got robbed, the robbers made you wear their masks to look like your clothes.",
     "You're so ugly, when you went to the therapist, he gave you injections for your face.",
     "You're so ugly, when you went to the DMV, they had to roll out your windows so that other drivers could see your face.",
     "You're so ugly, when you went to the DMV, they didn't let you in because you were in the front seat.",
@@ -179,6 +191,7 @@ var insults = [
     "The human brain is one of the most complex objects in the universe. Is it any wonder that so many people never learn to use it.",
     "You're so ugly, when you popped out the doctor said 'Aww what a treasure' and your mom said 'Yeah, lets bury it.'",
     "You're so fat, you could sell shade.",
+    "You're so ugly, when you got robbed, the robbers made you wear their masks to look like your clothes.",
     "You're so ugly, when you went to the therapist, he gave you injections for your face.",
     "Robots will take over the world, but you'll be the first one they take.",
     "Artists use you as a refrence point, for what to throw out",
@@ -217,6 +230,7 @@ var insults = [
     "Your teeth remind me of starts - yellow and far apart.",
     "I will boil your teeth",
     "You look like somebody stepped on a goldfish.",
+    "I will invert your ribcage",
     "I'd like to help you out. Which way did you come in?",
     "I love to shop, but i'm not buying anything you say",
     "Someday you'll go far. And I really hope you stay there.",
@@ -254,11 +268,18 @@ var insults = [
     "Don't worry about me. Worry about your eyebrows.",
     "Grab a straw, because you suck.",
     "You're the reason the gene pool needs a lifeguard.",
-    " ",
+    "You are not even beneath my contempt.",
+    "Your forehead is so big you donated it to charity for shelter!",
+    "You're as sharp as a bowling ball.",
+    "You always find yourself lost in thought; it's unfamiliar territory.",
+    "You're so ugly, you scared the crap out of the toilet.",
+    "If I had a dollar for every time you said something smart, I'd be broke.",
+    "Look to your left --------------> I said left you idiot!",
+    rickRollButton,
 ];
-function GenerateInsult() {
+function GenerateInsult(insult) {
     insult = insults[Math.floor(Math.random() * (insults.length - 0.01))];
-    console.log(insults);
+    console.log(insult);
     document.getElementById("insult").innerHTML = insult;
 }
 function geolocation() {
