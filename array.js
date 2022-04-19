@@ -7,11 +7,7 @@ Licensed under the Apache-2.0 license. See LICENSE file in the project root for 
 
 
 */
-
-
 import { rickRollButton } from './rickRollButton';
-
-
 let insults = [
     "you are dog water",
     "you bad",
@@ -278,5 +274,4 @@ let insults = [
     "Look to your left --------------> I said left you idiot!",
     rickRollButton,
 ];
-
-export { insults }
+export { insults };
