@@ -5,6 +5,7 @@
         "semVer (prerelease)",
         "semVer (build)",
         "semVer (major)",
-        "ci"
+        "ci",
+        "dependencies"
     ]
 }
