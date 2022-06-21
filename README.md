@@ -49,9 +49,8 @@ import { insults, GenerateInsult } from 'demotivator';
 ```
 
 ## Usage
-In your HTML, add any element with the id `insult`. This will be the element that will be updated with the insult.
-
-Add any element, and pass the `onclick="GenerateInsult()"` attribute to it. This will be the element that will trigger the insult.
+`GenerateInsult()` will return a random insult. Run this function anytime you need to refresh the random insult.
+`insults` gives you access to the full array of insults. Do with it as you wish.
 
 
 ## Examples
@@ -93,6 +92,10 @@ This is an example for a basic web page integrated with (de)Motivator.js
 // src/index.js
 // As always, you'll need a module bundler like webpack or rollup to compile your code into a form the browser can understand.
 import { insults, GenerateInsult } from 'demotivator';
+const insult = document.getElementById('insult');
+button.addEventListener('click', GenerateInsult, () => {
+  insult.innerHTML = GenerateInsult();
+});
 
 ```
 

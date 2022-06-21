@@ -7,5 +7,6 @@
         "semVer (major)",
         "ci",
         "dependencies"
-    ]
+    ],
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }

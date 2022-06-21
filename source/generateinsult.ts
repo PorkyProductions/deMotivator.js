@@ -8,12 +8,11 @@ Licensed under the Apache-2.0 license. See LICENSE file in the project root for 
 
 */
 
-
+type Insult = void | string;
 
 import { insults } from './array';
 
 
-export default function GenerateInsult({ insult }: { insult; }): void {
-    insult = insults[Math.floor(Math.random() * (insults.length - 0.01))];
-    console.log(insult);
+export default function GenerateInsult(): Insult {
+    return insults[Math.floor(Math.random() * insults.length)];
 }
