@@ -1,15 +1,15 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "outDir": "./",
+        "outDir": "./out",
     },
     "lib": [
         "es6",
         "dom"
     ],
     "files": [
-        "./ts/array.ts",
-        "./ts/generateInsult.ts",
-        "./ts/index.ts"
+        "source/array.ts",
+        "source/generateInsult.ts",
+        "source/index.ts"
     ]
 }

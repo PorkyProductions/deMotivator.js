@@ -1,8 +1,8 @@
 {
   "name": "demotivator",
-  "version": "8.5.0",
+  "version": "9.0.0",
   "description": "An extensive JavaScript Library to integrate the power of (de)Motivator into your webapp.",
-  "main": "index.js",
+  "main": "./out/index.js",
   "scripts": {
     "test": "node index.js",
     "build": "npx tsc -p tsconfig.json"
