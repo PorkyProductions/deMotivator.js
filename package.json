@@ -4,7 +4,7 @@
   "description": "An extensive JavaScript Library to integrate the power of (de)Motivator into your webapp.",
   "main": "./out/index.js",
   "scripts": {
-    "test": "node index.js",
+    "test": "node out/index.js",
     "build": "npx tsc -p tsconfig.json"
   },
   "repository": {
