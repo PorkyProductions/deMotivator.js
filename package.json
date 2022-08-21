@@ -1,6 +1,6 @@
 {
   "name": "demotivator",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "An extensive JavaScript Library to integrate the power of (de)Motivator into your webapp.",
   "main": "./out/index.js",
   "scripts": {
