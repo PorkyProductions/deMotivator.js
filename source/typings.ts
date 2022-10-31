@@ -14,8 +14,5 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-import { Insult } from './typings'
-import { insults } from './array';
-export default function GenerateInsult(): Insult {
-    return insults[Math.floor(Math.random() * insults.length)];
-}
+export type Insult = string
+export type Insults = string[]
