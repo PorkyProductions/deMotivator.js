@@ -2,11 +2,12 @@
   "name": "demotivator",
   "version": "11.0.0",
   "description": "An extensive JavaScript Library to integrate the power of (de)Motivator into your webapp.",
-  "main": "./out/index.js",
   "type": "module",
   "scripts": {
     "test": "node out/index.js",
-    "build": "npx tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "types": " tsc ./source/index.ts --declaration --allowJs --emitDeclarationOnly --outDir ./dist/types",
+    "buildThenGenerateTypes": "npm run build && npm run types"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,11 @@
     "dmv",
     "demotivator",
     "dmv.js",
-    "demotivator.js"
+    "demotivator.js",
+    "insult",
+    "insults",
+    "insult array",
+    "array"
   ],
   "author": "PorkyProductions",
   "license": "Apache-2.0",
@@ -26,5 +31,18 @@
   "homepage": "https://github.com/PorkyProductions/deMotivator.js#readme",
   "devDependencies": {
     "typescript": "^4.5.5"
-  }
+  },
+  "files": [
+    "./dist/**/*.{js, d.ts}",
+    "./dist/types/**/*.d.ts"
+  ],
+  "main": "./dist/index.js",
+  "displayName": "(de)Motivator.js",
+  "contributors": [
+    "Tristan Winata"
+  ],
+  "maintainers": [
+    "Ryan Mullin"
+  ],
+  "types": "./dist/types/*.d.ts"
 }
