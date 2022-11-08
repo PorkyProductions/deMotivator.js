@@ -14,5 +14,9 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
+
+/**
+ * @type Insult -
+ * an alias for the 'string' type for easier readibilty
+ */
 export type Insult = string
-export type Insults = string[]

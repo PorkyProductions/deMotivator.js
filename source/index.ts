@@ -20,6 +20,7 @@
 
 import { insults } from './array';
 import generateInsult from "./generateInsult";
+import { insultAt } from './generateInsult';
 
 
-export { insults, generateInsult };
+export { insults, generateInsult, insultAt };

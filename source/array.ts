@@ -15,9 +15,14 @@
 * limitations under the License.
 */
 
-import {Insults} from './typings'
+import {Insult} from './typings'
 
-export let insults: Insults = [
+
+/**
+ * @remarks
+ * This is an array of all the insults.
+ */
+export let insults: Insult[] = [
     "you are dog water",
     "you bad",
     "you have the same chance of reproducing as a computer mouse",
