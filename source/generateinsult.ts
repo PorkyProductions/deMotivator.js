@@ -14,14 +14,14 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-import { Insult } from './typings'
+import { Insult } from './typings';
 import { insults } from './array';
 
 /**
  * @returns a psuedorandom insult from the insult array.
  */
 export default function GenerateInsult(): Insult {
-    return insults[Math.floor(Math.random() * insults.length)];
+	return insults[Math.floor(Math.random() * insults.length)];
 }
 
 /**
@@ -29,4 +29,4 @@ export default function GenerateInsult(): Insult {
  * @param {number} position
  * @returns {string} the insult at the position specified
  */
-export const insultAt = (position: number): Insult => insults[position + 1] 
+export const insultAt = (position: number): Insult => insults[position - 1];

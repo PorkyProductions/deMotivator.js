@@ -15,12 +15,7 @@
 * limitations under the License.
 */
 
-
-
-
 import { insults } from './array';
-import generateInsult from "./generateInsult";
-import { insultAt } from './generateInsult';
-
+import generateInsult, { insultAt } from './generateInsult';
 
 export { insults, generateInsult, insultAt };
