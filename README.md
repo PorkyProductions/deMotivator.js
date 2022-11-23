@@ -1,3 +1,4 @@
+![demotivator.js](https://raw.githubusercontent.com/PorkyProductions/deMotivator.js/dev/images/dmvjslogo_tagline.png)
 # (de)Motivator.js
 
 - [(de)Motivator.js](#demotivatorjs)
