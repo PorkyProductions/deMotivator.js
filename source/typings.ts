@@ -16,7 +16,7 @@
 */
 
 /**
- * @type Insult -
+ * @type Insult
  * an alias for the 'string' type for easier readibilty
  */
 export type Insult = string
