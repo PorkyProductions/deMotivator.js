@@ -14,19 +14,9 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-import { Insult } from './typings';
-import { insults } from './array';
 
 /**
- * @returns a psuedorandom insult from the insult array.
+ * @type Insult
+ * an alias for the 'string' type for easier readibilty
  */
-export default function GenerateInsult(): Insult {
-	return insults[Math.floor(Math.random() * insults.length)];
-}
-
-/**
- * insultAt
- * @param {number} position
- * @returns {string} the insult at the position specified
- */
-export const insultAt = (position: number): Insult => insults[position - 1];
+export type Insult = string

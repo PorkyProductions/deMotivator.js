@@ -1,3 +1,4 @@
+![demotivator.js](https://raw.githubusercontent.com/PorkyProductions/deMotivator.js/dev/images/dmvjslogo_tagline.png)
 # (de)Motivator.js
 
 - [(de)Motivator.js](#demotivatorjs)
@@ -44,12 +45,13 @@ Include the `demotivator` package in your `package.json` (this should be done au
 In your javascript file, import the required packages
 
 ```javascript
-import { insults, GenerateInsult } from 'demotivator';
+import { insults, GenerateInsult, insultAt } from 'demotivator';
 
 ```
 
 ## Usage
 `GenerateInsult()` will return a random insult. Run this function anytime you need to refresh the random insult.
+`insultAt`returns the insult at the specified point in the array. Takes 1 numerical argument, which is the spot in the array to return
 `insults` gives you access to the full array of insults. Do with it as you wish.
 
 
@@ -100,7 +102,7 @@ button.addEventListener('click', GenerateInsult, () => {
 ```
 
 ## Update Schedule
-DMV.js will follow the same update schedule as [(de)Motivator](https://porkyproductions.github.io/deMotivator), with a release every 2-3 weeks.
+DMV.js will follow the same update schedule as [(de)Motivator](https://porkyproductions.github.io/deMotivator), with a release every 2-3 months.
 
 ## License
 
