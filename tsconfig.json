@@ -1,17 +1,29 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "outDir": "./dist",
-        "strict": true,
-        "pretty": true
-    },
-    "lib": [
-        "es6",
-        "dom"
-    ],
-    "files": [
-        "source/array.ts",
-        "source/generateInsult.ts",
-        "source/index.ts"
-    ]
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "charset": "UTF-8",
+    "diagnostics": true,
+    "moduleResolution": "node",
+    "noErrorTruncation": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "outDir": "./dist/",
+    "pretty": true,
+    "declaration": false,
+    "removeComments": false,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "sourceMap": true,
+    "target": "ES2016",
+    "watch": false
+  },
+  "files": [
+    "./source/index.ts"
+  ],
+  "types": [],
+  "typeRoots": ["node_modules/@types"],
+  "lib": ["dom", "es2016"]
 }
