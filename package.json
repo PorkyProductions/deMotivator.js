@@ -1,6 +1,6 @@
 {
   "name": "demotivator",
-  "version": "11.0.0",
+  "version": "11.0.1",
   "description": "A extremely large array of 300+ insults so you can integrate the power of (de)Motivator into your webapp.",
   "type": "module",
   "scripts": {
@@ -45,5 +45,5 @@
   "maintainers": [
     "Ryan Mullin"
   ],
-  "types": "./dist/types/*.d.ts"
+  "types": "./dist/types/**/*.d.ts"
 }
