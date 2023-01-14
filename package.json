@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node out/index.js",
     "build": "tsc -p tsconfig.json",
-    "types": " tsc ./source/index.ts --declaration --allowJs --emitDeclarationOnly --outDir ./dist/types",
+    "types": " tsc ./source/index.ts --declaration --allowJs --emitDeclarationOnly --esModuleInterop --outDir ./dist/types",
     "buildThenGenerateTypes": "npm run build && npm run types"
   },
   "repository": {
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/PorkyProductions/deMotivator.js#readme",
   "devDependencies": {
+    "@types/lodash": "^4.14.191",
     "typescript": "^4.9.3"
   },
   "files": [
@@ -45,5 +46,8 @@
   "maintainers": [
     "Ryan Mullin"
   ],
-  "types": "./dist/types/*.d.ts"
+  "types": "./dist/types/*.d.ts",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }

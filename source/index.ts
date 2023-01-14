@@ -15,7 +15,29 @@
 * limitations under the License.
 */
 
-import { insults } from './array';
+import { insults, shuffleInsults } from './array';
 import generateInsult, { insultAt } from './generateInsult';
+import { type _DeMotivator, type Insult } from './typings';
 
 export { insults, generateInsult, insultAt };
+
+export const deMotivator: _DeMotivator = {
+  insults: insults,
+  shuffleInsults: shuffleInsults,
+  generateInsult: generateInsult,
+  insultAt: insultAt,
+}; 
+export default deMotivator
+
+export class DeMotivator implements _DeMotivator {
+  insults: Insult[] = insults;
+  public shuffleInsults(): Insult[] {
+    return shuffleInsults()
+  }
+  public generateInsult(): Insult {
+    return generateInsult();
+  }
+  public insultAt(position: number): Insult {
+    return insultAt(position);
+  }
+}

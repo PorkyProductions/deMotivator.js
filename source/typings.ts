@@ -20,3 +20,9 @@
  * an alias for the 'string' type for easier readibilty
  */
 export type Insult = string
+export interface _DeMotivator {
+  insults: Insult[];
+  shuffleInsults: () => Insult[]
+  generateInsult: () => Insult;
+  insultAt: (position: number) => Insult;
+}

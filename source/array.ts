@@ -16,6 +16,7 @@
 */
 
 import { Insult } from './typings';
+import shuffle from 'lodash/shuffle'
 
 /**
  * @remarks
@@ -351,3 +352,8 @@ export const insults: Insult[] = [
   "Does your head only have noodles instead of a brain?",
   ""
 ];
+
+
+export const shuffleInsults = (): Insult[] => {
+  return shuffle(insults)
+}
