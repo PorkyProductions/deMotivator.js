@@ -1,6 +1,6 @@
 /**
 * @license
-* Copyright 2022, PorkyProductions, and contributors
+* Copyright 2023, PorkyProductions, and contributors
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -15,25 +15,21 @@
 * limitations under the License.
 */
 
-import { insults, shuffleInsults } from './array';
-import generateInsult, { insultAt } from './generateInsult';
-import { type _DeMotivator, type Insult } from './typings';
+import { insults } from './array';
+import generateInsult, { insultAt } from './generateinsult';
+import { type __DeMotivator, type Insult } from './typings';
 
 export { insults, generateInsult, insultAt };
 
-export const deMotivator: _DeMotivator = {
+export const deMotivator: __DeMotivator = {
   insults: insults,
-  shuffleInsults: shuffleInsults,
   generateInsult: generateInsult,
   insultAt: insultAt,
 }; 
 export default deMotivator
 
-export class DeMotivator implements _DeMotivator {
+export class DeMotivator implements __DeMotivator {
   insults: Insult[] = insults;
-  public shuffleInsults(): Insult[] {
-    return shuffleInsults()
-  }
   public generateInsult(): Insult {
     return generateInsult();
   }

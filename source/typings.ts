@@ -1,6 +1,6 @@
 /**
 * @license
-* Copyright 2022, PorkyProductions, and contributors
+* Copyright 2023, PorkyProductions, and contributors
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,9 +20,8 @@
  * an alias for the 'string' type for easier readibilty
  */
 export type Insult = string
-export interface _DeMotivator {
+export interface __DeMotivator {
   insults: Insult[];
-  shuffleInsults: () => Insult[]
   generateInsult: () => Insult;
   insultAt: (position: number) => Insult;
 }

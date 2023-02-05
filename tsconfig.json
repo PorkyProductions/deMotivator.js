@@ -1,29 +1,35 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
+    "exactOptionalPropertyTypes": false,
     "charset": "UTF-8",
     "diagnostics": true,
     "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
     "noErrorTruncation": false,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "listEmittedFiles": true,
     "outDir": "./dist/",
     "pretty": true,
-    "declaration": false,
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "declarationMap": true,
     "removeComments": false,
     "strict": true,
     "strictFunctionTypes": true,
     "sourceMap": true,
-    "target": "ES2016",
+    "skipLibCheck": true,
+    "target": "es2016", // 3 years ago JavaScript is up to date enough, right???
     "watch": false
   },
-  "files": [
-    "./source/index.ts"
-  ],
+  "files": ["./source/index.ts"],
   "types": [],
   "typeRoots": ["node_modules/@types"],
   "lib": ["dom", "es2016"]
