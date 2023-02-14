@@ -15,7 +15,7 @@
 * limitations under the License.
 */
 
-import { insults } from './array';
+import { insults } from './insults';
 import generateInsult, { insultAt } from './generateinsult';
 import { type __DeMotivator, type Insult } from './typings';
 

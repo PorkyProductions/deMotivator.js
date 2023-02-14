@@ -15,7 +15,7 @@
 * limitations under the License.
 */
 import { Insult } from './typings';
-import { insults } from './array';
+import { insults } from './insults';
 
 /**
  * @returns a psuedorandom insult from the insult array.

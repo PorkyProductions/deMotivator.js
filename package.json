@@ -35,7 +35,8 @@
   "files": [
     "./dist/**/*.js",
     "./dist/**/*.js.map",
-    "./dist/types/**/*.d.ts"
+    "./dist/types/**/*.d.ts",
+    "./dist/types/**/*.d.ts.map"
   ],
   "main": "./dist/index.js",
   "displayName": "(de)Motivator.js",
