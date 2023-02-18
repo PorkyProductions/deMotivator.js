@@ -6,7 +6,8 @@
         "semVer (build)",
         "semVer (major)",
         "ci",
-        "dependencies"
+        "dependencies",
+        "types"
     ],
     "typescript.tsdk": "node_modules\\typescript\\lib"
 }
