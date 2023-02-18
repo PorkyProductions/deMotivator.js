@@ -1,13 +1,11 @@
 {
   "name": "demotivator",
-  "version": "11.0.0",
+  "version": "12.0.0-beta-1",
   "description": "A extremely large array of 300+ insults so you can integrate the power of (de)Motivator into your webapp.",
   "type": "module",
   "scripts": {
     "test": "node out/index.js",
-    "build": "tsc -p tsconfig.json",
-    "types": " tsc ./source/index.ts --declaration --allowJs --emitDeclarationOnly --esModuleInterop --outDir ./dist/types",
-    "buildThenGenerateTypes": "npm run build && npm run types"
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -46,5 +44,8 @@
   "maintainers": [
     "Ryan Mullin"
   ],
-  "types": "./dist/types/*.d.ts"
+  "types": "./dist/types/*.d.ts",
+  "dependencies": {
+    "esbuild": "^0.17.8"
+  }
 }
