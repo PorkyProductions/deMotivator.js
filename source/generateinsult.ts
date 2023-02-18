@@ -20,13 +20,16 @@ import { insults } from './insults';
 /**
  * @returns a psuedorandom insult from the insult array.
  */
-export default function GenerateInsult(): Insult {
-	return insults[Math.floor(Math.random() * insults.length)];
+export default function GenerateInsult(array: Insult[] = insults): Insult {
+	return array[Math.floor(Math.random() * array.length)];
 }
 
+
 /**
- * insultAt
- * @param {number} position
- * @returns {string} the insult at the position specified
+ * Get a specific insult from a point and array that you specify
+ *
+ * @param {Insult[]} [array=insults] The array to select from. Deault is original only
+ * @param {number} position The position in the array to select. Starts indexing at 1, not 0.
+ * @returns {Insult}
  */
-export const insultAt = (position: number): Insult => insults[position - 1];
+export const insultAt = (array: Insult[] = insults, position: number): Insult => array[position - 1];

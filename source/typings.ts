@@ -20,8 +20,30 @@
  * an alias for the 'string' type for easier readibilty
  */
 export type Insult = string
+
+/**
+ * An typesafe interface for `deMotivator` and `DeMotivator`
+ *
+ * @export
+ * @interface __DeMotivator
+ * @typedef {__DeMotivator}
+ */
 export interface __DeMotivator {
   insults: Insult[];
-  generateInsult: () => Insult;
-  insultAt: (position: number) => Insult;
+  profaneInsults: Insult[];
+  createArray: (configuration: CreateArrayConfig) => Insult[]
+  generateInsult: (array: Insult[]) => Insult;
+  insultAt: (array: Insult[], position: number) => Insult;
+}
+
+/**
+ * A interface for the configuration options passed to `createArray`
+ * @export
+ * @interface CreateArrayConfig
+ * @typedef {CreateArrayConfig}
+ * @see createArray
+ */
+export interface CreateArrayConfig {
+  original: boolean,
+  profane: boolean,
 }
