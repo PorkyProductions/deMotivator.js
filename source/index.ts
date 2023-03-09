@@ -64,7 +64,7 @@ export class DeMotivator implements __DeMotivator {
   insults: Insult[] = insults;
   profaneInsults: Insult[] = profaneInsults;
   private __createBasicArray(): Insult[] {
-    return createArray({ original: true, profane: false }) as Insult[]
+    return createArray({ original: true, profane: false }) as Insult[];
   }
   public createArray(configuration: CreateArrayConfig): Insult[] {
     return createArray(configuration);
@@ -72,7 +72,7 @@ export class DeMotivator implements __DeMotivator {
   public generateInsult(array: Insult[] = this.__createBasicArray()): Insult {
     return generateInsult(array);
   }
-  public insultAt(array: Insult[] = this.__createBasicArray(), position: number): Insult {
-    return insultAt(array, position);
+  public insultAt(position: number,array: Insult[] = this.__createBasicArray()): Insult {
+    return insultAt(position, array);
   }
 }

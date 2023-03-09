@@ -31,9 +31,9 @@ export type Insult = string
 export interface __DeMotivator {
   insults: Insult[];
   profaneInsults: Insult[];
-  createArray: (configuration: CreateArrayConfig) => Insult[]
+  createArray: (configuration: CreateArrayConfig) => Insult[];
   generateInsult: (array: Insult[]) => Insult;
-  insultAt: (array: Insult[], position: number) => Insult;
+  insultAt: (position: number, array: Insult[]) => Insult;
 }
 
 /**
