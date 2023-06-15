@@ -19,14 +19,14 @@
     "outDir": "./dist/",
     "pretty": true,
     "declaration": true,
-    "declarationDir": "./dist/types",
+    "declarationDir": "./dist/",
     "declarationMap": true,
     "removeComments": false,
     "strict": true,
     "strictFunctionTypes": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "target": "es2016", // 3 years ago JavaScript is up to date enough, right???
+    "target": "ES2020", // 3 years ago JavaScript is up to date enough, right???
     "watch": false
   },
   "files": ["./source/index.ts"],

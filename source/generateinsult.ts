@@ -21,6 +21,7 @@ import { insults } from './insults';
  * @returns a psuedorandom insult from the insult array.
  */
 export default function generateInsult(array: Insult[] = insults): Insult {
+	array ??= insults
 	return array[Math.floor(Math.random() * array.length)];
 }
 

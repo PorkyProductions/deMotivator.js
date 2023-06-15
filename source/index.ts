@@ -23,7 +23,7 @@ import {
   type CreateArrayConfig,
 } from "./typings";
 
-export { insults, generateInsult, insultAt };
+export { insults, generateInsult, insultAt, type Insult, type CreateArrayConfig };
 
 
 /**
@@ -43,6 +43,14 @@ export const createArray = (configuration: CreateArrayConfig): Insult[] => {
   }
 };
 
+
+/**
+ * The main deMotivator object.
+ * Contains all the functions and properties of the deMotivator.
+ * @date 6/15/2023 - 11:37:58 AM
+ * @export
+ * @type {__DeMotivator}
+ */
 export const deMotivator: __DeMotivator = {
   insults: insults,
   profaneInsults: profaneInsults,
@@ -61,17 +69,61 @@ export default deMotivator;
  * @implements {__DeMotivator}
  */
 export class DeMotivator implements __DeMotivator {
+  /**
+   * The entire insults array
+   * @date 6/15/2023 - 11:39:04 AM
+   *
+   * @type {Insult[]}
+   */
   insults: Insult[] = insults;
+  /**
+   * All of the profane insults
+   * @date 6/15/2023 - 11:39:04 AM
+   *
+   * @type {Insult[]}
+   */
   profaneInsults: Insult[] = profaneInsults;
+  /**
+   * Creates a basic array of insults.
+   * @date 6/15/2023 - 11:39:04 AM
+   * @internal
+   * @private
+   * @returns {Insult[]}
+   */
   private __createBasicArray(): Insult[] {
     return createArray({ original: true, profane: false }) as Insult[];
   }
+  /**
+   * Creates a custom insult array based on a configuration you provide.
+   * @date 6/15/2023 - 11:39:04 AM
+   * @external
+   * @public
+   * @param {CreateArrayConfig} configuration
+   * @returns {Insult[]}
+   */
   public createArray(configuration: CreateArrayConfig): Insult[] {
     return createArray(configuration);
   }
+  /**
+   * Grabs a random insult from the insults array.
+   * @date 6/15/2023 - 11:39:04 AM
+   *
+   * @public
+   * @param {Insult[]} [array=this.__createBasicArray()]
+   * @returns {Insult}
+   */
   public generateInsult(array: Insult[] = this.__createBasicArray()): Insult {
     return generateInsult(array);
   }
+  /**
+   * Gets an insult at a specific position in the insults array.
+   * @date 6/15/2023 - 11:39:04 AM
+   *
+   * @public
+   * @param {number} position
+   * @param {Insult[]} [array=this.__createBasicArray()]
+   * @returns {Insult}
+   */
   public insultAt(position: number,array: Insult[] = this.__createBasicArray()): Insult {
     return insultAt(position, array);
   }
