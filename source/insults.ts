@@ -338,7 +338,27 @@ export const insults: Insult[] = [
   "Every time you open your mouth, some idiot starts talking.",
   "People clap when they see you, they clap their hands over their eyes.",
   "Does your head only have noodles instead of a brain?",
-  ""
+  "You're so ugly, your family tells their friends that you're adopted",
+  "When you were born, your mother was fined for illegal dumping",
+  "You're so dumb, your favorite number of the alphabet is purple",
+  "You're so lazy, if your ship came in you wouldn't unload it",
+  "The easiest time to add insult to injury is when you're signing somebody's cast.",
+  "If I wanted to kill myself I'd climb your ego and jump to your IQ.",
+  "I love what you've done with your hair. How do you get it to come out of the nostrils like that?",
+  "You do realize makeup isn't going to fix your stupidity?",
+  "We all sprang from apes, but you didn't spring far enough.",
+  "You are so old, when you were a kid rainbows were black and white.",
+  "You are living proof that manure can sprout legs and walk.",
+  "I don't know what makes you so stupid, but it really works.",
+  "You are so ugly if they laid you on the beach, not even the tide would take you.",
+  "If what you don't know can't hurt you, you're invulnerable.",
+  "Do you wanna lose ten pounds of ugly fat? Cut off your head.",
+  "I'm already visualising the duct tape across your mouth.",
+  "No, those pants don't make you look fatter. I mean, how could they?",
+  "The janitor said he took out the trash last night, he must forgot a piece, what are you still doing here?",
+  "The 80s were great because I didn't have to look at your selfies.",
+  "The only way you can fit your whole body into a photo is to use panorama.",
+  "How are you related to the sun? Because your teeth are the same color as it."
 ];
 
 /**
@@ -370,4 +390,13 @@ export const profaneInsults: Insult[] = [
   "You are so fucking stupid",
   "This is the dumbest fucking thing you have ever done.",
   "Did that last insult hurt your feelings? Well, you should have seen it coming. You fucking deserve it.",
+  "Aha, I see the Fuck-Up Fairy has visited us again!",
+  "If I wanted to hear from an asshole, I'd fart.",
+  "You are living proof that shit can sprout legs and walk.",
+  "Karma takes too long, I'd rather beat the shit out of you just now.",
+  "Which sex position produces the ugliest children? Ask your mother.",
+  "If bullshit could float...you'd be the Admiral of the fleet! ",
+  "I may love to shop but I'm not buying your bullshit.",
+  "If shit was music, you'd be an orchestra.",
+  "You sound a lot like the Terms and Conditions, that's why I don't give a shit about what you have to say"
 ];
