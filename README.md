@@ -42,17 +42,20 @@ npm i demotivator
 
 Include the `demotivator` package in your `package.json` (this should be done automatically by npm)
 
-In your javascript file, import the required packages
+In your javascript file, (de)Motivator
 
 ```javascript
-import { insults, GenerateInsult, insultAt } from 'demotivator';
-
+import deMotivator from 'demotivator';
 ```
 
 ## Usage
-`GenerateInsult()` will return a random insult. Run this function anytime you need to refresh the random insult.
-`insultAt`returns the insult at the specified point in the array. Takes 1 numerical argument, which is the spot in the array to return
+`generateInsult` will return a random insult. Run this function anytime you need to refresh the random insult. Takes one argument, the array of insults to generate from.
+`insultAt`returns the insult at the specified point in the array. Takes 2 arguments, the first of which is the spot in the array to return, and the second is the array to pick from.
 `insults` gives you access to the full array of insults. Do with it as you wish.
+`profaneInsults` gives you all of the profane, or "dirty" insults that come with the package.
+`createArray` creates an array of insults based on a configuration of your choosing
+`deMotivator` Contains all the functions and properties of the deMotivator.
+`DeMotivator` A class version of the `deMotivator` object
 
 
 ## Examples
@@ -78,7 +81,7 @@ This is an example for a basic web page integrated with (de)Motivator.js
     <body>
     <br>
     <h1>(de)Motivator.js example</h1>
-    <button onclick="GenerateInsult()">Click Me</button> 
+    <button onclick="generateInsult()">Click Me</button> 
     <br/>
     <div>
       <p id = "insult">
@@ -93,16 +96,17 @@ This is an example for a basic web page integrated with (de)Motivator.js
 ```javascript
 // src/index.js
 // As always, you'll need a module bundler like webpack or rollup to compile your code into a form the browser can understand.
-import { insults, GenerateInsult } from 'demotivator';
+import { generateInsult } from 'demotivator';
 const insult = document.getElementById('insult');
-button.addEventListener('click', GenerateInsult, () => {
-  insult.innerHTML = GenerateInsult();
-});
+button.addEventListener('click', () => insult.innerHTML = generateInsult(createArray({
+  original: true,
+  profane: false,
+));
 
 ```
 
 ## Update Schedule
-DMV.js will follow the same update schedule as [(de)Motivator](https://porkyproductions.github.io/deMotivator), with a release every 2-3 months.
+DMV.js will follow the same update schedule as [(de)Motivator](https://porkyproductions.github.io/deMotivator), with a release every 6-8 months.
 
 ## License
 
