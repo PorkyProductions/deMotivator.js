@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-import { insults, profaneInsults } from "./insults";
-import generateInsult, { insultAt } from "./generateinsult";
+import { insults, profaneInsults } from './insults';
+import generateInsult, { insultAt } from './generateinsult';
 import {
-  type __DeMotivator,
-  type Insult,
-  type CreateArrayConfig,
-} from "./typings";
+	type __DeMotivator,
+	type Insult,
+	type CreateArrayConfig,
+} from './typings';
 
 export { insults, generateInsult, insultAt, type Insult, type CreateArrayConfig };
 
@@ -34,13 +34,13 @@ export { insults, generateInsult, insultAt, type Insult, type CreateArrayConfig 
  * @returns {Insult[]} an array of insults
  */
 export const createArray = (configuration: CreateArrayConfig): Insult[] => {
-  if (configuration.profane && !configuration.original) {
-    return profaneInsults as Insult[];
-  } else if (configuration.profane && configuration.original) {
-    return insults.concat(profaneInsults) as Insult[];
-  } else {
-    return insults as Insult[];
-  }
+	if (configuration.profane && !configuration.original) {
+		return profaneInsults as Insult[];
+	} else if (configuration.profane && configuration.original) {
+		return insults.concat(profaneInsults) as Insult[];
+	} else {
+		return insults as Insult[];
+	}
 };
 
 
@@ -52,11 +52,11 @@ export const createArray = (configuration: CreateArrayConfig): Insult[] => {
  * @type {__DeMotivator}
  */
 export const deMotivator: __DeMotivator = {
-  insults: insults,
-  profaneInsults: profaneInsults,
-  createArray: createArray,
-  generateInsult: generateInsult,
-  insultAt: insultAt,
+	insults: insults,
+	profaneInsults: profaneInsults,
+	createArray: createArray,
+	generateInsult: generateInsult,
+	insultAt: insultAt,
 };
 export default deMotivator;
 
@@ -69,31 +69,31 @@ export default deMotivator;
  * @implements {__DeMotivator}
  */
 export class DeMotivator implements __DeMotivator {
-  /**
+	/**
    * The entire insults array
    * @date 6/15/2023 - 11:39:04 AM
    *
    * @type {Insult[]}
    */
-  insults: Insult[] = insults;
-  /**
+	insults: Insult[] = insults;
+	/**
    * All of the profane insults
    * @date 6/15/2023 - 11:39:04 AM
    *
    * @type {Insult[]}
    */
-  profaneInsults: Insult[] = profaneInsults;
-  /**
+	profaneInsults: Insult[] = profaneInsults;
+	/**
    * Creates a basic array of insults.
    * @date 6/15/2023 - 11:39:04 AM
    * @internal
    * @private
    * @returns {Insult[]}
    */
-  private __createBasicArray(): Insult[] {
-    return createArray({ original: true, profane: false }) as Insult[];
-  }
-  /**
+	private __createBasicArray(): Insult[] {
+		return createArray({ original: true, profane: false }) as Insult[];
+	}
+	/**
    * Creates a custom insult array based on a configuration you provide.
    * @date 6/15/2023 - 11:39:04 AM
    * @external
@@ -101,10 +101,10 @@ export class DeMotivator implements __DeMotivator {
    * @param {CreateArrayConfig} configuration
    * @returns {Insult[]}
    */
-  public createArray(configuration: CreateArrayConfig): Insult[] {
-    return createArray(configuration);
-  }
-  /**
+	public createArray(configuration: CreateArrayConfig): Insult[] {
+		return createArray(configuration);
+	}
+	/**
    * Grabs a random insult from the insults array.
    * @date 6/15/2023 - 11:39:04 AM
    *
@@ -112,10 +112,10 @@ export class DeMotivator implements __DeMotivator {
    * @param {Insult[]} [array=this.__createBasicArray()]
    * @returns {Insult}
    */
-  public generateInsult(array: Insult[] = this.__createBasicArray()): Insult {
-    return generateInsult(array);
-  }
-  /**
+	public generateInsult(array: Insult[] = this.__createBasicArray()): Insult {
+		return generateInsult(array);
+	}
+	/**
    * Gets an insult at a specific position in the insults array.
    * @date 6/15/2023 - 11:39:04 AM
    *
@@ -124,7 +124,7 @@ export class DeMotivator implements __DeMotivator {
    * @param {Insult[]} [array=this.__createBasicArray()]
    * @returns {Insult}
    */
-  public insultAt(position: number,array: Insult[] = this.__createBasicArray()): Insult {
-    return insultAt(position, array);
-  }
+	public insultAt(position: number,array: Insult[] = this.__createBasicArray()): Insult {
+		return insultAt(position, array);
+	}
 }

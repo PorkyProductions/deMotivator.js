@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node dist/index.js",
+    "lint": "eslint ./source/** --fix",
     "build": "tsc -p tsconfig.json"
   },
   "repository": {
@@ -28,6 +29,11 @@
   },
   "homepage": "https://github.com/PorkyProductions/deMotivator.js#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
     "typescript": "^4.9.5"
   },
   "files": [
@@ -44,6 +50,5 @@
   "maintainers": [
     "Ryan Mullin"
   ],
-  "types": "./dist/index.d.ts",
-  "dependencies": {}
+  "types": "./dist/index.d.ts"
 }
