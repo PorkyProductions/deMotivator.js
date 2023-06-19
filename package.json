@@ -1,13 +1,12 @@
 {
   "name": "demotivator",
-  "version": "11.1.0",
+  "version": "12.0.0",
   "description": "A extremely large array of 300+ insults so you can integrate the power of (de)Motivator into your webapp.",
   "type": "module",
   "scripts": {
-    "test": "node out/index.js",
-    "build": "tsc -p tsconfig.json",
-    "types": " tsc ./source/index.ts --declaration --allowJs --emitDeclarationOnly --outDir ./dist/types",
-    "buildThenGenerateTypes": "npm run build && npm run types"
+    "test": "node dist/index.js",
+    "lint": "eslint ./source/** --fix",
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -30,12 +29,18 @@
   },
   "homepage": "https://github.com/PorkyProductions/deMotivator.js#readme",
   "devDependencies": {
-    "typescript": "^4.9.3"
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.9.5"
   },
   "files": [
     "./dist/**/*.js",
     "./dist/**/*.js.map",
-    "./dist/types/**/*.d.ts"
+    "./dist/**/*.d.ts",
+    "./dist/**/*.d.ts.map"
   ],
   "main": "./dist/index.js",
   "displayName": "(de)Motivator.js",
@@ -45,5 +50,5 @@
   "maintainers": [
     "Ryan Mullin"
   ],
-  "types": "./dist/types/index.d.ts"
+  "types": "./dist/index.d.ts"
 }

@@ -1,6 +1,6 @@
 /**
 * @license
-* Copyright 2022, PorkyProductions, and contributors
+* Copyright 2023, PorkyProductions, and contributors
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -15,18 +15,22 @@
 * limitations under the License.
 */
 import { Insult } from './typings';
-import { insults } from './array';
+import { insults } from './insults';
 
 /**
  * @returns a psuedorandom insult from the insult array.
  */
-export default function GenerateInsult(): Insult {
-	return insults[Math.floor(Math.random() * insults.length)];
+export default function generateInsult(array: Insult[] = insults): Insult {
+	array ??= insults;
+	return array[Math.floor(Math.random() * array.length)];
 }
 
+
 /**
- * insultAt
- * @param {number} position
- * @returns {string} the insult at the position specified
+ * Get a specific insult from a point and array that you specify
+ *
+ * @param {Insult[]} [array=insults] The array to select from. Deault is original only
+ * @param {number} position The position in the array to select. Starts indexing at 1, not 0.
+ * @returns {Insult}
  */
-export const insultAt = (position: number): Insult => insults[position - 1];
+export const insultAt = (position: number, array: Insult[] = insults): Insult => array[position - 1];

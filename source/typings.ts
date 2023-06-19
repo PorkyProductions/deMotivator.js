@@ -1,6 +1,6 @@
 /**
 * @license
-* Copyright 2022, PorkyProductions, and contributors
+* Copyright 2023, PorkyProductions, and contributors
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,3 +20,30 @@
  * an alias for the 'string' type for easier readibilty
  */
 export type Insult = string
+
+/**
+ * An typesafe interface for `deMotivator` and `DeMotivator`
+ *
+ * @export
+ * @interface __DeMotivator
+ * @typedef {__DeMotivator}
+ */
+export interface __DeMotivator {
+  insults: Insult[];
+  profaneInsults: Insult[];
+  createArray: (configuration: CreateArrayConfig) => Insult[];
+  generateInsult: (array: Insult[]) => Insult;
+  insultAt: (position: number, array: Insult[]) => Insult;
+}
+
+/**
+ * A interface for the configuration options passed to `createArray`
+ * @export
+ * @interface CreateArrayConfig
+ * @typedef {CreateArrayConfig}
+ * @see createArray
+ */
+export interface CreateArrayConfig {
+  original: boolean,
+  profane: boolean,
+}
