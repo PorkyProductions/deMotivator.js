@@ -1,6 +1,6 @@
 /**
 * @license
-* Copyright 2023, PorkyProductions, and contributors
+* Copyright 2024, PorkyProductions, and contributors
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import { insults } from './insults';
  * @returns a psuedorandom insult from the insult array.
  */
 export default function generateInsult(array: Insult[] = insults): Insult {
-	array ??= insults;
+	array ||= insults;
 	return array[Math.floor(Math.random() * array.length)];
 }
 
