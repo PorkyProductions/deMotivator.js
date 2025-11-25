@@ -5,7 +5,6 @@
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "exactOptionalPropertyTypes": false,
-    "charset": "UTF-8",
     "diagnostics": true,
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
@@ -26,8 +25,7 @@
     "strictFunctionTypes": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "target": "ES2020", // 3 years ago JavaScript is up to date enough, right???
-    "watch": false
+    "target": "ES2022", // 3 years ago JavaScript is up to date enough, right???
   },
   "files": ["./source/index.ts"],
   "types": [],
