@@ -35,11 +35,11 @@ export { insults, generateInsult, insultAt, type Insult, type CreateArrayConfig 
  */
 export const createArray = (configuration: CreateArrayConfig): Insult[] => {
 	if (configuration.profane && !configuration.original) {
-		return profaneInsults as Insult[];
+		return profaneInsults;
 	} else if (configuration.profane && configuration.original) {
-		return insults.concat(profaneInsults) as Insult[];
+		return insults.concat(profaneInsults);
 	} else {
-		return insults as Insult[];
+		return insults;
 	}
 };
 
