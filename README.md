@@ -1,3 +1,11 @@
+# ⚠️ This repository has moved
+
+This package is now maintained in a monorepo:
+
+👉 [https://github.com/PorkyProductions/deMotivator/tree/mega/packages/demotivator](https://github.com/PorkyProductions/deMotivator/tree/mega/packages/demotivator)
+
+This repository is deprecated and no longer maintained.
+
 ![demotivator.js](https://raw.githubusercontent.com/PorkyProductions/deMotivator.js/dev/images/dmvjslogo_tagline.png)
 # (de)Motivator.js
 
